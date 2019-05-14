@@ -1,0 +1,87 @@
+:root {
+    --font: #FFF;
+    --fontDarker: rgb(3, 3, 3);
+    --gradientFrom: #FFEBDA;
+    --gradientTo: #FFAE6D;
+    /*ffbc42  24BEDB;*/
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Iceland', cursive, helvetica, sans-serif;
+    font-size: 24px;
+    color: var(--font);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+}
+
+#title {
+    letter-spacing: 1rem;
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('../assets/images/Screen\ Shot\ 2019-05-14\ at\ 00.22.53.png');
+
+}
+
+.activity {
+    background-color: red;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    width: 100VW;
+    height: 100vh;
+}
+
+#fabrication {
+    background-size: cover;
+    background-image: url('../assets/images/rob-lambert-64186-unsplash.jpg');
+}
+
+#montage {
+
+}
+
+#laser {
+    background-size: cover;
+    background-image: url('../assets/images/daniel-clay-1389766-unsplash.jpg');
+
+}
+
+#maintenance {
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font: var(--fontDarker);
+}
