@@ -44,12 +44,11 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 3rem;
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    background-image: url('../assets/images/Screen\ Shot\ 2019-05-14\ at\ 00.22.53.png');
+    background-image: url('../assets/images/facade_trou.jpg');
 
 }
 
@@ -63,20 +62,24 @@ h2 {
 
 #fabrication {
     background-size: cover;
-    background-image: url('../assets/images/rob-lambert-64186-unsplash.jpg');
+    background-image: url('../assets/images/soudeur1_vertical.jpg');
 }
 
 #montage {
+    background-size: cover;
+    background-image: url('../assets/images/crochet.jpg');
 
 }
 
 #laser {
     background-size: cover;
-    background-image: url('../assets/images/daniel-clay-1389766-unsplash.jpg');
-
+    background-image: url('../assets/images/laser1.jpg');
+    
 }
 
 #maintenance {
+    background-size: cover;
+    background-image: url('../assets/images/abstrait_metal_vert.jpg');
 
 }
 
