@@ -25,6 +25,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #8DB3D8;
 }
 
 #title {
@@ -40,29 +41,39 @@ h2 {
 .hero {
     display: grid;
     grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 5% 15% 60% 15% 5%;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-image: url('../assets/images/facade_trou.jpg');
+    
 }
 
 #logo {
-    fill: #0074D9;
+    fill: #060186;
     width: 100%;
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: 2;
+    grid-row-start: 3;
 
 }
 
 #subtitle {
     font-size: 2rem;
-    color: #0074D9;
+    color: #060186;
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 3;
+    grid-row-start: 4;
+}
+
+.illustration {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.illustration img {
+    width: 100%;
 }
 
 .activity {
