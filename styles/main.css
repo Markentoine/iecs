@@ -64,8 +64,7 @@ header {
 
 .head-info {
     display: flex;
-    width: 33%;
-    justify-content: space-around;
+    width: 40%;
 }
 
 #title {
@@ -82,6 +81,7 @@ h2 {
     display: flex;
     align-items: center;
     fill: var(--logo);
+    margin-right: 0.5rem;
 }
 
 
