@@ -1,6 +1,6 @@
 :root {
-    --font: #FFF;
-    --fontDarker: rgb(3, 3, 3);
+    --bg: ##f8f8f8;
+    --logo: #0074D9;
     --gradientFrom: #FFEBDA;
     --gradientTo: #FFAE6D;
     /*ffbc42  24BEDB;*/
@@ -25,7 +25,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #8DB3D8;
+    background-color: var(--bg);
 }
 
 #title {
@@ -49,7 +49,7 @@ h2 {
 }
 
 #logo {
-    fill: #060186;
+    fill: var(--logo);
     width: 100%;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -59,20 +59,20 @@ h2 {
 
 #subtitle {
     font-size: 2rem;
-    color: #060186;
+    color: var(--logo);
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 4;
 }
 
-.illustration {
+#facade-matin {
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
-.illustration img {
+#facade-matin img {
     width: 100%;
 }
 
