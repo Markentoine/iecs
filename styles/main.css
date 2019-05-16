@@ -59,7 +59,7 @@ header {
 #contact-head {
     display: flex;
     justify-content: space-evenly;
-    width: 32.5%;
+    width: 40%;
 }
 
 .head-info {
