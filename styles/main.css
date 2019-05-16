@@ -1,5 +1,5 @@
 :root {
-    --bg: ##f8f8f8;
+    --bg: #f8f8f8;
     --logo: #0074D9;
 }
 
@@ -28,6 +28,10 @@ body {
 a {
     text-decoration: none;
     color: var(--logo);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -91,6 +95,10 @@ h2 {
     
 }
 
+.hero p, header p {
+    font-family: 'Iceland', sans-serif;
+}
+
 #logo {
     fill: var(--logo);
     width: 100%;
@@ -106,6 +114,7 @@ h2 {
     grid-column-start: 2;
     grid-column-end: 7;
     grid-row-start: 4;
+    z-index: 0;
 }
 
 #facade-matin {
@@ -120,32 +129,53 @@ h2 {
 }
 
 .activity {
+    display: grid;
+    grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
+    grid-template-rows: 5vh 100vh;
     background-color: var(--bg);
-    padding: 1rem 0;
     font-size: 1.5rem;
     width: 100VW;
-    height: 100vh;
 }
 
-#fabrication {
-    height: 100vh;
+#illustration-soudeur {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 5;
 }
 
-#montage {
-    background-size: cover;
-    background-image: url('../assets/images/crochet.jpg');
+#illustration-soudeur img {
+    width: 100%;
 }
 
-#laser {
-    background-size: cover;
-    background-image: url('../assets/images/laser1.jpg');
-    
+#intro {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: var(--bg);
 }
 
-#maintenance {
-    background-size: cover;
-    background-image: url('../assets/images/abstrait_metal_vert.jpg');
+#intro :first-child {
+    margin-bottom: 5rem;
+}
 
+#mots-clefs {
+    margin: 2rem 0 .5rem 0;;
+}
+
+.explications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explications p {
+    padding: 0 3rem;
+    text-align: center;
+    line-height: 3rem;
 }
 
 footer {
