@@ -1,16 +1,13 @@
 :root {
     --bg: ##f8f8f8;
     --logo: #0074D9;
-    --gradientFrom: #FFEBDA;
-    --gradientTo: #FFAE6D;
-    /*ffbc42  24BEDB;*/
 }
 
 html {
     box-sizing: border-box;
     font-family: 'Iceland', cursive, helvetica, sans-serif;
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-    color: var(--font);
+    color: var(--logo);
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -28,9 +25,15 @@ body {
     background-color: var(--bg);
 }
 
+a {
+    text-decoration: none;
+    color: var(--logo);
+}
+
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100vw;
     height: 5vh;
     background-color: #ebebeb;
@@ -46,7 +49,19 @@ header {
 }
 
 #logo-container {
-    width: 50%;
+    width: 65%;
+}
+
+#contact-head {
+    display: flex;
+    justify-content: space-evenly;
+    width: 32.5%;
+}
+
+.head-info {
+    display: flex;
+    width: 33%;
+    justify-content: space-around;
 }
 
 #title {
@@ -58,6 +73,13 @@ h2 {
     font-size: 1rem;
     margin-bottom: 4rem;
 }
+
+.icon {
+    display: flex;
+    align-items: center;
+    fill: var(--logo);
+}
+
 
 .hero {
     display: grid;
