@@ -120,7 +120,7 @@ h2 {
 }
 
 .activity {
-    background-color: red;
+    background-color: var(--bg);
     padding: 1rem 0;
     font-size: 1.5rem;
     width: 100VW;
