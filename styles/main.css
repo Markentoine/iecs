@@ -184,6 +184,10 @@ h2 {
     grid-row-end: 5;
 }
 
+#words img {
+    width: 100%;
+}
+
 #illustration-laser {
     grid-column-start: 5;
     grid-column-end: 7;
