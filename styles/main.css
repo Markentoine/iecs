@@ -107,6 +107,11 @@ header {
     color: var(--logo);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .activity {
     display: grid;
     grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
