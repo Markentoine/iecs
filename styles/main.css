@@ -75,7 +75,6 @@ header {
     margin-right: 0.5rem;
 }
 
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -83,7 +82,6 @@ header {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    
 }
 
 .hero p, header p {
@@ -107,9 +105,61 @@ header {
     color: var(--logo);
 }
 
+/*-------------------------------------MAIN------------------------------------------------------- */
+
 main {
     display: flex;
     flex-direction: column;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
+    grid-template-rows: 20vh 60vh 20vh;
+    background-color: var(--bg);
+    margin: 1rem;
+}
+
+#intro :first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#intro ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#intro .explications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#mots-clefs li {
+    margin: .5rem;
+    font-size: 2rem;
+}
+
+.explications p {
+    padding: 0 2rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
 }
 
 .activity {
@@ -132,36 +182,6 @@ main {
     width: 100%;
 }
 
-#intro {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: var(--bg);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1rem;
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#mots-clefs li {
-    margin: .5rem;
-    font-size: 2rem;
-}
-
-.explications p {
-    padding: 0 2rem;
-    text-align: center;
-    line-height: 2rem;
-    font-size: 1.5rem;
-}
 
 #words {
     grid-column-start: 2;
