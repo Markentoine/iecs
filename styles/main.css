@@ -266,6 +266,10 @@ main {
 }
 
 #machines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column-start: 2;
     grid-column-end: 7;
     grid-row-start: 7;
