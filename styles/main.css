@@ -1,5 +1,6 @@
 :root {
     --bg: #f8f8f8;
+    --bg-header: #ebebeb;
     --logo: #0074D9;
 }
 
@@ -40,7 +41,7 @@ header {
     justify-content: space-between;
     width: 100vw;
     height: 5vh;
-    background-color: #ebebeb;
+    background-color: var(--bg-header);
     position: fixed;
     z-index: 5;
 }
@@ -53,7 +54,11 @@ header {
 }
 
 #logo-container {
-    width: 65%;
+    width: 50%;
+}
+
+#logo-container img {
+    width: 100%;
 }
 
 #contact-head {
@@ -76,9 +81,9 @@ header {
 
 
 .hero {
-    display: grid;
-    grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
-    grid-template-rows: 5% 15% 60% 15% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -90,32 +95,16 @@ header {
 }
 
 #logo {
+    display: flex;
+    justify-content: center;
     fill: var(--logo);
-    width: 100%;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-
+    width: 50%;
 }
 
 #subtitle {
     font-size: 2rem;
     color: var(--logo);
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 4;
     z-index: 0;
-}
-
-#facade-matin {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-
-#facade-matin img {
-    width: 100%;
 }
 
 .activity {
@@ -179,7 +168,7 @@ header {
 }
 
 #illustration-laser {
-    grid-column-start: 5;
+    grid-column-start: 6;
     grid-column-end: 7;
     grid-row-start: 4;
     grid-row-end: 7;
