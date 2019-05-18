@@ -6,7 +6,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: 'Iceland', cursive, helvetica, sans-serif;
+    font-family: 'Montserrat', helvetica, sans-serif;
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     color: var(--logo);
     scroll-behavior: smooth;
@@ -29,10 +29,6 @@ body {
 a {
     text-decoration: none;
     color: var(--logo);
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -117,7 +113,7 @@ header {
     grid-template-rows: 5vh 100vh 30vh 25vh 25vh 70vh;
     background-color: var(--bg);
     font-size: 1rem;
-    width: 100VW;
+    width: 100vw;
 }
 
 #illustration-soudeur {
@@ -135,29 +131,30 @@ header {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
     background-color: var(--bg);
-}
-
-#intro :first-child {
-    margin-bottom: 5rem;
-}
-
-#mots-clefs {
-    margin: 2rem 0 .5rem 0;;
-}
-
-.explications {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mots-clefs li {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
 .explications p {
-    padding: 0 3rem;
+    padding: 0 2rem;
     text-align: center;
     line-height: 2rem;
+    font-size: 1.5rem;
 }
 
 #words {
