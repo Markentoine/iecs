@@ -31,6 +31,12 @@ a {
     color: var(--logo);
 }
 
+svg {
+    fill: var(--logo);
+}
+
+img { width: 100%;}
+
 header {
     display: flex;
     align-items: center;
@@ -68,10 +74,9 @@ header {
     width: 40%;
 }
 
-.icon {
+.icon-head {
     display: flex;
     align-items: center;
-    fill: var(--logo);
     margin-right: 0.5rem;
 }
 
@@ -97,7 +102,6 @@ header {
 
 #logo img {
     width: 100%;
-    height: 100%;
 }
 
 #subtitle {
@@ -140,6 +144,45 @@ main {
     grid-row-end: 3;
 }
 
+.icon-clef {
+    width: 15%;
+}
+
+.icon-clef svg {
+    fill: var(--bg);
+}
+
+.mots-clefs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2496FC;
+    color: var(--bg);
+    border-radius: 0.5rem;
+}
+
+#concevoir {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#fabriquer {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#installer {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 #intro .explications {
     display: flex;
     justify-content: center;
@@ -150,10 +193,6 @@ main {
     grid-row-end: 4;
 }
 
-#mots-clefs li {
-    margin: .5rem;
-    font-size: 2rem;
-}
 
 .explications p {
     padding: 0 2rem;
@@ -183,6 +222,25 @@ main {
 }
 
 
+#illustration-laser {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#illustration-laser img {
+    width: 100%;
+}
+
+#illustratio-etincelle {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
 #words {
     grid-column-start: 2;
     grid-column-end: 5;
@@ -194,16 +252,6 @@ main {
     width: 100%;
 }
 
-#illustration-laser {
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 7;
-}
-
-#illustration-laser img {
-    width: 100%;
-}
 
 #plaque {
     grid-column-start: 2;
