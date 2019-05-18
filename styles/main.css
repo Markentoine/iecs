@@ -101,6 +101,10 @@ header {
     width: 50%;
 }
 
+#logo img {
+    width: 100%;
+}
+
 #subtitle {
     font-size: 2rem;
     color: var(--logo);
