@@ -109,7 +109,7 @@ header {
 #subtitle {
     font-size: 2rem;
     color: var(--logo);
-    z-index: 0;
+    z-index: -1;
 }
 
 .activity {
