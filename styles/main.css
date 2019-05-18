@@ -224,8 +224,8 @@ main {
 
 
 #illustration-laser {
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 3;
 }
@@ -235,8 +235,8 @@ main {
 }
 
 #illustratio-etincelle {
-    grid-column-start: 6;
-    grid-column-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
 }
