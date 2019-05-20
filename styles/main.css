@@ -120,17 +120,6 @@ textarea {
     margin-right: 0.5rem;
 }
 
-#logo {
-    display: flex;
-    justify-content: center;
-    fill: var(--logo);
-    width: 50%;
-}
-
-#logo img {
-    width: 100%;
-    height: 100%;
-}
 
 #subtitle {
     font-size: 2rem;
@@ -150,14 +139,26 @@ main {
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .hero p, header p {
     font-family: 'Iceland', sans-serif;
 }
 
+#logo {
+    display: flex;
+    justify-content: center;
+    fill: var(--logo);
+    width: 40%;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
 #intro {
     display: grid;
     grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
