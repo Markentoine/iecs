@@ -9,7 +9,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Montserrat', helvetica, sans-serif;
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    font-size: 2vw;
     color: var(--logo);
     scroll-behavior: smooth;
     margin: 0;
