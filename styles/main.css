@@ -9,7 +9,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Montserrat', helvetica, sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     color: var(--logo);
     scroll-behavior: smooth;
     margin: 0;
@@ -91,7 +91,7 @@ ul {
 
 
 #subtitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--logo);
 }
 
@@ -215,8 +215,8 @@ main {
 
 .activity {
     display: grid;
-    grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
-    grid-template-rows: 5vh 70vh 10vh 25vh 25vh 50vh 10vh 40vh 50vh 30vh 60vh 140vh 95vh;
+    grid-template-columns: 5.5% 28% 2.5% 28% 2.5% 28% 5.5%;
+    grid-template-rows: 5vh 70vh 10vh 25vh 25vh 50vh 10vh 40vh 35h 5vh 60vh 125vh 80vh;
     background-color: var(--bg);
     font-size: 1rem;
     width: 100vw;
@@ -264,7 +264,6 @@ main {
 }
 
 #machines {
-    background-color: var(--logo);
     border-radius: .3rem;
     grid-column-start: 2;
     grid-column-end: 7;
@@ -279,19 +278,18 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--bg);
 }
 
 #machines ul li {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: .5rem 0;
 }
 
 #portrait {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 8;
-    grid-row-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
     margin-left: 5vw;
 }
 
@@ -302,8 +300,8 @@ main {
 #investissement  {
     grid-column-start: 4;
     grid-column-end: 7;
-    grid-row-start: 8;
-    grid-row-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -351,6 +349,10 @@ main {
     grid-row-end: 13;
 }
 
+.situation img {
+    width: 100%;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -362,16 +364,16 @@ main {
 }
 
 form {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
 
 input {
     width: 75%;
-    height: 1.5rem;
-    font-size: 1rem;
+    height: 1rem;
+    font-size: .6rem;
     padding-left: .3rem;
     border-radius: .3rem;
     border-style: solid;
@@ -383,23 +385,29 @@ input[type=submit] {
     width: 90%;
 }
 
+
+#identity, #medias {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 0.6rem;
+}
+
+.form-piece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 textarea {
     font-size: 1rem;
     padding: .3rem;
     border-radius: .3rem;
     border-style: solid;
     width: 90%;
-}
-
-#identity, #medias {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
-}
-
-.form-piece {
-    display: flex;
-    flex-direction: column;
 }
 
 #messageArea {
