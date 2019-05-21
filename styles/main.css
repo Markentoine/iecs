@@ -359,6 +359,10 @@ main {
     grid-row-end: 12;
 }
 
+.confiance p {
+    font-size: 1.5rem;
+}
+
 #clients {
     display: flex;
     margin-left: 10vw;
