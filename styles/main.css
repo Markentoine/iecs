@@ -57,37 +57,6 @@ ul {
     list-style: none;
 }
 
-form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    width: 50%;
-    height: 1.5rem;
-    font-size: 1rem;
-    padding-left: .3rem;
-    border-radius: .3rem;
-    border-style: solid;
-}
-
-input[type=submit] {
-    background-color: var(--logo);
-    color: var(--bg);
-}
-
-label {
-    margin: .5rem 0;
-}
-
-textarea {
-    font-size: 1rem;
-    padding: .3rem;
-    border-radius: .3rem;
-    border-style: solid;
-}
-
 #logo-head {
     display: flex;
     justify-content: center;
@@ -247,7 +216,7 @@ main {
 .activity {
     display: grid;
     grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
-    grid-template-rows: 5vh 70vh 10vh 25vh 25vh 50vh 10vh 40vh 50vh 30vh 60vh 30vh;
+    grid-template-rows: 5vh 70vh 10vh 25vh 25vh 50vh 10vh 40vh 50vh 30vh 60vh 140vh 95vh;
     background-color: var(--bg);
     font-size: 1rem;
     width: 100vw;
@@ -358,7 +327,7 @@ main {
     grid-row-end: 12;
 }
 
-.confiance p {
+.confiance p, .situation p, .contact p {
     font-size: 1.5rem;
 }
 
@@ -372,12 +341,76 @@ main {
     width: 30%;
 }
 
+.situation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 13;
+    grid-row-end: 14;
 }
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    width: 75%;
+    height: 1.5rem;
+    font-size: 1rem;
+    padding-left: .3rem;
+    border-radius: .3rem;
+    border-style: solid;
+}
+
+input[type=submit] {
+    background-color: var(--logo);
+    color: var(--bg);
+    width: 90%;
+}
+
+textarea {
+    font-size: 1rem;
+    padding: .3rem;
+    border-radius: .3rem;
+    border-style: solid;
+    width: 90%;
+}
+
+#identity, #medias {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.form-piece {
+    display: flex;
+    flex-direction: column;
+}
+
+#messageArea {
+    display: flex;
+    justify-content: center;
+}
+
+#messageArea .form-piece {
+    width: 60%;
+}
+
 
 footer {
     display: flex;
