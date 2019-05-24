@@ -78,7 +78,6 @@ ul {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    outline: 2px solid green;
 }
 
 #contact-head p {
