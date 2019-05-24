@@ -4,7 +4,7 @@ const rellax = new Rellax('.rellax');
 
 document.addEventListener('DOMContentLoaded', () => {
     const windowWidth = window.innerWidth;
-    const subtitle = document.getElementById('subtitle');
+    const subtitle = document.getElementById("subtitle");
     const logoHead = document.getElementById("logo-head");
 
     // behavior for mobile devices ----------------------
@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         contactMail.remove();
 
         const icons = document.getElementsByClassName('icon-clef');
-        console.log([...icons].map(e => e.firstElementChild).map(e => e.atttibutes))
+        [...icons].map(e => e.firstElementChild).forEach(e => {
+            e.setAttribute('width', 72);
+            e.setAttribute('height', 72);
+        });
     }
 
     logoHead.onclick = () => window.scroll(0, 0);
