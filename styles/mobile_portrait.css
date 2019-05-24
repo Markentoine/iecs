@@ -76,18 +76,23 @@ ul {
 
 #contact-head {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 80%;
+    outline: 2px solid green;
 }
 
 #contact-head p {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .head-info {
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 50%;
+}
+
+#mail {
+    width: 10%;
 }
 
 .icon-head {
