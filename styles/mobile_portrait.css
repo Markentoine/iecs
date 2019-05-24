@@ -42,6 +42,8 @@ img {
     border-radius: .3rem;
 }
 
+/*--------------------------HEADER-------------------------------------*/
+
 header {
     display: flex;
     align-items: center;
@@ -84,6 +86,7 @@ ul {
 
 .head-info {
     display: flex;
+    align-items: center;
     width: 40%;
 }
 
@@ -92,8 +95,6 @@ ul {
     align-items: center;
     margin-right: 0.5rem;
 }
-
-
 
 /*-------------------------------------MAIN------------------------------------------------------- */
 
