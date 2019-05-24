@@ -9,7 +9,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Montserrat', helvetica, sans-serif;
-    font-size: 1.5vw;
+    font-size: 3vw;
     color: var(--logo);
     scroll-behavior: smooth;
     margin: 0;
@@ -81,7 +81,7 @@ ul {
 }
 
 #contact-head p {
-    font-size: 3.5rem;
+    font-size: 1.6rem;
 }
 
 .head-info {
@@ -117,9 +117,8 @@ main {
     align-items: center;
     width: 100vw;
     height: 50vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    z-index: -1;
+    margin-top: 12vh;
+    margin-bottom: 3vh;
 }
 
 .hero p, header p {
@@ -140,6 +139,7 @@ main {
 
 #subtitle {
     font-size: 3rem;
+    text-align: center;
     color: var(--logo);
 }
 
@@ -147,18 +147,17 @@ main {
 
 #intro {
     display: grid;
-    grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
-    grid-template-rows: 20vh 60vh 25vh;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 12vh 25vh 3vh 25vh 3vh 25vh 12vh;
     background-color: var(--bg);
-    margin: 10vh;
 }
 
-#intro :first-child {
+#intro p {
     display: flex;
     justify-content: center;
     align-items: center;
     grid-column-start: 2;
-    grid-column-end: 7;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -199,17 +198,17 @@ main {
 }
 
 #fabriquer {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 #installer {
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
 }
 
 #intro .explications {
@@ -217,9 +216,9 @@ main {
     justify-content: center;
     align-items: center;
     grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
 }
 
 
@@ -229,6 +228,8 @@ main {
     line-height: 2rem;
     font-size: 1.5rem;
 }
+
+/*---------------------------------ACTIVITIES--------------------------------------------------------*/
 
 .activity {
     display: grid;

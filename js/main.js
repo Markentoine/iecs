@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (windowWidth <= 800) {
         const contactMail = document.getElementById('iecsFR');
         contactMail.remove();
+
+        const icons = document.getElementsByClassName('icon-clef');
+        console.log([...icons].map(e => e.firstElementChild).map(e => e.atttibutes))
     }
 
     logoHead.onclick = () => window.scroll(0, 0);
