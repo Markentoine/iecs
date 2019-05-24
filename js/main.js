@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             el.classList.remove('rellax');
             el.dataset.rellaxSpeed = ""
         });
-        rellax = null;
+        rellax.destroy();
     }
 
     logoHead.onclick = () => window.scroll(0, 0);
