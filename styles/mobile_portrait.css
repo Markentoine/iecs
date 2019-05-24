@@ -115,6 +115,7 @@ main {
     height: 50vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    z-index: -1;
 }
 
 .hero p, header p {
