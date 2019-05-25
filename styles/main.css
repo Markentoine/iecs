@@ -349,9 +349,7 @@ main {
     grid-row-end: 13;
 }
 
-.situation img {
-    width: 100%;
-}
+/*------------------------------------------CONTACT FORM----------------------------------------*/
 
 .contact {
     display: flex;
@@ -364,16 +362,16 @@ main {
 }
 
 form {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 input {
-    width: 75%;
-    height: 1rem;
-    font-size: .6rem;
+    width: 85%;
+    height: 1.3rem;
+    font-size: .5rem;
     padding-left: .3rem;
     border-radius: .3rem;
     border-style: solid;
@@ -383,23 +381,30 @@ input[type=submit] {
     background-color: var(--logo);
     color: var(--bg);
     width: 90%;
+    height: 6vh;
+    font-size: 1.5rem;
 }
-
 
 #identity, #medias {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 2rem;
+    width: 60%;
 }
 
 label {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .form-piece {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
+}
+
+#medias .form-piece:last-child {
+    width: 30%;
 }
 
 textarea {
@@ -412,13 +417,15 @@ textarea {
 
 #messageArea {
     display: flex;
+    width: 60%;
     justify-content: center;
 }
 
 #messageArea .form-piece {
-    width: 60%;
+    width: 80%;
 }
 
+/*----------------------------FOOTER--------------------------------------------*/
 
 footer {
     display: flex;
