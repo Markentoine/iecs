@@ -86,7 +86,16 @@ ul {
     width: 50%;
 }
 
-#mail {
+#phone {
+    width: 70%;
+    outline: 2px solid green;
+}
+
+#phone p {
+    font-size: 2.5rem;
+}
+
+#mail-link {
     width: 10%;
 }
 
