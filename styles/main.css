@@ -432,5 +432,36 @@ footer {
     justify-content: space-between;
     align-items: center;
     font: var(--fontDarker);
-    font-size: .5rem;
+    font-size: .6rem;
+    background-color: var(--bg-header);
+}
+
+#mentions:hover {
+    cursor: pointer;
+}
+
+#mentions-text {
+    position: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mentions-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#mentions-wrapper div {
+    width: 30%;
+    font-size: .7rem;
+    text-align: justify;
+}
+
+#overlay {
+    width: 100vw;
+    height: 90vh;
+    position: block;
+    background-color: var(--bg);
+    margin-top: 6vh;
 }

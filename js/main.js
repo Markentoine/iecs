@@ -1,11 +1,48 @@
 'use strict'
 
-let rellax = new Rellax('.rellax');
+const rellax = new Rellax('.rellax');
+const year = new Date().getUTCFullYear();
 
 document.addEventListener('DOMContentLoaded', () => {
     const windowWidth = window.innerWidth;
     const subtitle = document.getElementById("subtitle");
     const logoHead = document.getElementById("logo-head");
+    const yearEl = document.getElementById("year");
+    const mentions = document.getElementById('mentions');
+    const mentionsText = document.getElementById('mentions-text');
+    const footer = document.getElementsByTagName('footer')[0];
+    const main = document.getElementsByTagName('main')[0];
+    const mentionExplanations = document.getElementById('mentions-text');
+    const helpers = {
+        fadeOUtSubtitle: e => {
+            const unitOpacity = 1 / 500;
+            const opa = unitOpacity * window.scrollY;
+            if (opa >= 1) {
+                subtitle.style.opacity = 0;
+            } else {
+                subtitle.style.opacity = `${1 - opa}`;
+            }
+        },
+
+        revealMentions: e => {
+            main.style.display = 'none';
+            const overlay = document.createElement('div');
+            overlay.id = 'overlay';
+            document.body.insertBefore(overlay, footer);
+            overlay.append(mentionExplanations);
+            mentionExplanations.style.display = 'flex';
+        },
+
+    };
+
+    mentionsText.remove();
+
+    // set date
+    yearEl.textContent = year;
+
+    // mentions légales
+    mentions.onclick = helpers.revealMentions;
+
 
     // behavior for mobile devices ----------------------
 
@@ -33,20 +70,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --------------------------------------------------
 
-    const effects = {
-        fadeOUtSubtitle: e => {
-            const unitOpacity = 1 / 500;
-            const opa = unitOpacity * window.scrollY;
-            if (opa >= 1) {
-                subtitle.style.opacity = 0;
-            } else {
-                subtitle.style.opacity = `${1 - opa}`;
-            }
-        },
-
-    };
-
-
-
-    document.onscroll = effects.fadeOUtSubtitle;
+    document.onscroll = helpers.fadeOUtSubtitle;
 })
