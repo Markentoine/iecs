@@ -64,6 +64,10 @@ ul {
     fill: var(--logo);
 }
 
+#logo-head:hover {
+    cursor: pointer;
+}
+
 #logo-container {
     width: 80%;
 }
