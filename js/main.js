@@ -31,6 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.insertBefore(overlay, footer);
             overlay.append(mentionExplanations);
             mentionExplanations.style.display = 'flex';
+
+            const buttonRevenir = document.getElementById('revenir-site');
+            buttonRevenir.onclick = helpers.revenirSite;
+        },
+
+        revenirSite: e => {
+            const overlay = document.getElementById('overlay');
+            overlay.remove();
+            main.style.display = 'flex';
         },
 
     };

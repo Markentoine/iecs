@@ -452,14 +452,17 @@ footer {
 
 #mentions-wrapper {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 #mentions-wrapper div {
-    width: 30%;
+    width: 75%;
     font-size: .7rem;
     text-align: justify;
+    padding: .5rem 0;
 }
 
 #overlay {
@@ -468,4 +471,12 @@ footer {
     position: block;
     background-color: var(--bg);
     margin-top: 6vh;
+}
+
+#revenir-site {
+    background-color: var(--logo);
+    color: var(--bg);
+    border-style: solid;
+    border-radius: .3rem;
+    height: 2rem;
 }
