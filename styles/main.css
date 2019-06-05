@@ -225,7 +225,7 @@ main {
 .activity {
     display: grid;
     grid-template-columns: 5.5% 28% 2.5% 28% 2.5% 28% 5.5%;
-    grid-template-rows: 5vh 70vh 10vh 25vh 25vh 50vh 10vh 40vh 35vh 5vh 60vh 125vh 80vh;
+    grid-template-rows: 5vh 70vh 10vh 25vh 25vh 50vh 10vh 40vh 35vh 5vh 60vh 125vh 90vh;
     background-color: var(--bg);
     font-size: 1rem;
     width: 100vw;
