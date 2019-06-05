@@ -389,6 +389,10 @@ input[type=submit] {
     font-size: 1.5rem;
 }
 
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
 #identity, #medias {
     display: flex;
     justify-content: space-around;
@@ -467,7 +471,6 @@ footer {
 
 #overlay {
     width: 100vw;
-    height: 90vh;
     position: block;
     background-color: var(--bg);
     margin-top: 6vh;
@@ -479,4 +482,8 @@ footer {
     border-style: solid;
     border-radius: .3rem;
     height: 2rem;
+}
+
+#revenir-site:hover {
+    cursor: pointer;
 }

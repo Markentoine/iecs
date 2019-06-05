@@ -147,7 +147,10 @@
 
           <div class="contact" id="contact-form">
             <p>NOUS CONTACTER</p>
-            <form action="" method="POST">
+            <form name="contact-iecs" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+              <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </p>
               <div id="identity">
                 <div class="form-piece">
                   <label for="firstname">Prénom</label>
@@ -176,6 +179,7 @@
                 <div class="form-piece">
                   <label for="message">Message</label>
                   <textarea name="message" id="message" cols="30" rows="15"></textarea>
+                  <div data-netlify-recaptcha="true"></div>
                   <input type="submit" value="Envoyer" id="envoyer">
                 </div>
               </div>
@@ -193,6 +197,7 @@
         <div>Icons made by 
           <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
         </div>
+    </footer>
 
         <div id="mentions-text" hidden>
           <h1>Mentions légales et politique de confidentialité</h1>
@@ -462,8 +467,6 @@
           </div>
           <button id="revenir-site">REVENIR AU SITE</button>
         </div>
-
-    </footer>
 </body>
 </html>
 
