@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const footer = document.getElementsByTagName('footer')[0];
     const main = document.getElementsByTagName('main')[0];
     const mentionExplanations = document.getElementById('mentions-text');
+    const contactForm = document.getElementById('contact-form');
     const helpers = {
         fadeOUtSubtitle: e => {
             const unitOpacity = 1 / 500;
@@ -49,6 +50,20 @@ document.addEventListener('DOMContentLoaded', () => {
             mentions.addEventListener('click', helpers.revealMentions);
         },
 
+        controlInput: e => {
+            const target = e.target;
+            const inputValue = target.value;
+            if (target.id === 'firstname' || target.id === 'lastname') {
+                console.log(inputValue);
+                if (inputValue.match(/^[A-Za-zÀ-ÖØ-öø-ÿ\-\s]+$/)) {
+                    target.style.borderColor = 'green';
+                } else {
+                    target.style.borderColor = 'red';
+                }
+            }
+
+        },
+
     };
 
     mentionsText.remove();
@@ -59,6 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // mentions légales
     mentions.addEventListener('click', helpers.revealMentions);
 
+    // control input before validation
+
+    contactForm.addEventListener('keyup', helpers.controlInput);
 
     // behavior for mobile devices ----------------------
 
