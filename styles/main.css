@@ -438,6 +438,10 @@ textarea {
     width: 80%;
 }
 
+#champs-obligatoires {
+    font-size: .5rem;
+}
+
 /*----------------------------FOOTER--------------------------------------------*/
 
 footer {

@@ -33,7 +33,7 @@
           <div class="icon-head">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
           </div>
-         <p id="iecsFR"><a href="#contact-form">Contactez-nous</a></p>
+         <p id="iecsFR"><a href="#contact-form">Nous Contacter</a></p>
         </div>
       </div>
 
@@ -153,11 +153,11 @@
               </p>
               <div id="identity">
                 <div class="form-piece">
-                  <label for="firstname">Prénom</label>
+                  <label for="firstname">Prénom*</label>
                   <input type="text" name="firstname" id="firstname">
                 </div>
                 <div class="form-piece">
-                  <label for="lastname">Nom</label>
+                  <label for="lastname">Nom*</label>
                   <input type="text" name="lastname" id="lastname">
                 </div>
                 <div class="form-piece">
@@ -167,19 +167,20 @@
               </div>
               <div id="medias">
                 <div class="form-piece">
-                  <label for="mail">Mail</label>
-                  <input type="email" name="mail" id="mail">
+                  <label for="mail">Mail*</label>
+                  <input type="text" name="mail" id="mail">
                 </div>
                 <div class="form-piece">
-                  <label for="telephone">Telephone</label>
+                  <label for="telephone">Telephone*</label>
                   <input type="tel" name="telephone" id="telephone">
                 </div>
               </div>
               <div id="messageArea">
                 <div class="form-piece">
-                  <label for="message">Message</label>
+                  <label for="message">Message*</label>
                   <textarea name="message" id="message" cols="30" rows="15"></textarea>
                   <input type="submit" value="Envoyer" id="envoyer">
+                  <div id="champs-obligatoires">* champs obligatoires</div>
                 </div>
               </div>
             </form>

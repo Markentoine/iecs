@@ -56,9 +56,21 @@ document.addEventListener('DOMContentLoaded', () => {
             if (target.id === 'firstname' || target.id === 'lastname') {
                 console.log(inputValue);
                 if (inputValue.match(/^[A-Za-zÀ-ÖØ-öø-ÿ\-\s]+$/)) {
-                    target.style.borderColor = 'green';
+                    target.style.borderColor = '#5CDB95';
                 } else {
-                    target.style.borderColor = 'red';
+                    target.style.borderColor = '#FC4445';
+                }
+            } else if (target.id === 'telephone') {
+                if (inputValue.match(/^\+?[0-9]+$/)) {
+                    target.style.borderColor = '#5CDB95';
+                } else {
+                    target.style.borderColor = '#FC4445';
+                }
+            } else if (target.id === 'mail') {
+                if (inputValue.match(/^.+@.+$/)) {
+                    target.style.borderColor = '#5CDB95';
+                } else {
+                    target.style.borderColor = '#FC4445';
                 }
             }
 
