@@ -459,7 +459,12 @@ footer div:first-child {
 
 footer div:last-child {
     margin-right: .5rem;
-} 
+}
+
+#errors {
+    color: #FC4445;
+    margin-top: 1rem;
+}
 
 #mentions:hover {
     cursor: pointer;

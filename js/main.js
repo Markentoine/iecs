@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         controlInput: e => {
             const target = e.target;
             const inputValue = target.value;
+            document.getElementById('errors').textContent = '';
             if (target.id === 'firstname' || target.id === 'lastname') {
                 if (inputValue.match(/^[A-Za-zÀ-ÖØ-öø-ÿ\-\s]+$/)) {
                     target.style.borderColor = validInputColor;
@@ -82,19 +83,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         controlSubmission: e => {
             e.preventDefault();
+            const errorMessage = document.getElementById('errors');
             const elementsToCheck = [...form.elements].filter(el => {
                 const fieldsToCheck = ['firstname', 'lastname', 'mail', 'telephone'];
                 return !!fieldsToCheck.find(field => field === el.name)
             });
+            if (message.value === '') {
+                errorMessage.textContent = 'Veuillez entrer un message.'
+            }
             elementsToCheck.forEach(el => {
                 if (el.value === '') {
-                    console.log(el)
+                    errorMessage.textContent = 'Veuillez vérifier vos informations.'
                     el.style.borderColor = invalidInputColor;
                 }
-            })
-            if (message.value === '') {
-                console.log('attention aucun message');
-            }
+            });
         },
 
         resetFormFields: form => {
