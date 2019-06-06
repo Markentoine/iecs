@@ -453,6 +453,14 @@ footer {
     background-color: var(--bg-header);
 }
 
+footer div:first-child {
+    margin-left: .5rem;
+}
+
+footer div:last-child {
+    margin-right: .5rem;
+} 
+
 #mentions:hover {
     cursor: pointer;
 }
