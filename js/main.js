@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const submitEvent = new Event('submit');
                 const formName = [...document.getElementsByTagName('input')].find(input => input.name === 'form-name');
                 console.log('form name', formName);
-                form.dispatchEvent(submitEvent);
+                //form.dispatchEvent(submitEvent);
             }
         },
 
