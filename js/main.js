@@ -83,21 +83,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         controlSubmission: e => {
             e.preventDefault();
+            let submit = true
             const errorMessage = document.getElementById('errors');
             const elementsToCheck = [...form.elements].filter(el => {
                 const fieldsToCheck = ['firstname', 'lastname', 'mail', 'telephone'];
                 return !!fieldsToCheck.find(field => field === el.name)
             });
             if (message.value === '') {
-                errorMessage.textContent = 'Veuillez entrer un message.'
+                errorMessage.textContent = 'Veuillez entrer un message.';
+                submit = false;
             }
             elementsToCheck.forEach(el => {
                 if (el.value === '') {
                     errorMessage.textContent = 'Veuillez vérifier vos informations.'
                     el.style.borderColor = invalidInputColor;
+                    submit = false;
                 }
             });
-            if (message.textContent === '') {
+            if (submit) {
                 document.forms['form-contact'].submit();
             }
         },
