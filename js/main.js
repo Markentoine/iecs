@@ -103,6 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             if (submit) {
                 const submitEvent = new Event('submit');
+                const formName = [...document.getElementsByTagName('input')].find(input => input.name === 'form-name');
+                console.log('form name', formName);
                 form.dispatchEvent(submitEvent);
             }
         },
@@ -131,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // control submission of the form
     envoi.addEventListener('click', helpers.controlSubmission);
-    form.addEventListener('submit');
+    form.addEventListener('submit', () => alert('Merci'));
 
     // behavior for mobile devices ----------------------
 
