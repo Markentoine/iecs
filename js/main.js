@@ -97,6 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     el.style.borderColor = invalidInputColor;
                 }
             });
+            if (message.textContent === '') {
+                document.forms['form-contact'].submit();
+            }
         },
 
         resetFormFields: form => {
