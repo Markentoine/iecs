@@ -104,7 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (submit) {
                 const submitEvent = new Event('submit');
                 const formName = [...document.getElementsByTagName('input')].find(input => input.name === 'form-name');
-                console.log('form name', formName);
+                formName.value = 'contact-iecs';
+                console.log('formName', formName);
                 //form.dispatchEvent(submitEvent);
             }
         },
