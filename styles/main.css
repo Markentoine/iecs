@@ -428,6 +428,10 @@ textarea {
     width: 90%;
 }
 
+.rc-anchor {
+    width: 90%;
+}
+
 #messageArea {
     display: flex;
     width: 60%;
