@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const main = document.getElementsByTagName('main')[0];
     const mentionExplanations = document.getElementById('mentions-text');
     const contactForm = document.getElementById('contact-form');
+    const form = document.getElementById('form-contact');
+    const envoi = document.getElementById('envoyer');
+    const message = document.getElementById('message');
+    const validInputColor = '#5CDB95';
+    const invalidInputColor = '#FC4445';
     const helpers = {
         fadeOUtSubtitle: e => {
             const unitOpacity = 1 / 500;
@@ -54,26 +59,50 @@ document.addEventListener('DOMContentLoaded', () => {
             const target = e.target;
             const inputValue = target.value;
             if (target.id === 'firstname' || target.id === 'lastname') {
-                console.log(inputValue);
                 if (inputValue.match(/^[A-Za-zÀ-ÖØ-öø-ÿ\-\s]+$/)) {
-                    target.style.borderColor = '#5CDB95';
+                    target.style.borderColor = validInputColor;
                 } else {
-                    target.style.borderColor = '#FC4445';
+                    target.style.borderColor = invalidInputColor;
                 }
             } else if (target.id === 'telephone') {
                 if (inputValue.match(/^\+?[0-9]+$/)) {
-                    target.style.borderColor = '#5CDB95';
+                    target.style.borderColor = validInputColor;
                 } else {
-                    target.style.borderColor = '#FC4445';
+                    target.style.borderColor = invalidInputColor;
                 }
             } else if (target.id === 'mail') {
                 if (inputValue.match(/^.+@.+$/)) {
-                    target.style.borderColor = '#5CDB95';
+                    target.style.borderColor = validInputColor;
                 } else {
-                    target.style.borderColor = '#FC4445';
+                    target.style.borderColor = invalidInputColor;
                 }
             }
 
+        },
+
+        controlSubmission: e => {
+            e.preventDefault();
+            const elementsToCheck = [...form.elements].filter(el => {
+                const fieldsToCheck = ['firstname', 'lastname', 'mail', 'telephone'];
+                return !!fieldsToCheck.find(field => field === el.name)
+            });
+            elementsToCheck.forEach(el => {
+                if (el.value === '') {
+                    console.log(el)
+                    el.style.borderColor = invalidInputColor;
+                }
+            })
+            if (message.value === '') {
+                console.log('attention aucun message');
+            }
+        },
+
+        resetFormFields: form => {
+            const elements = [...form.elements];
+            const inputFields = elements.slice(0, elements.length - 1); // excludes the submit button
+            inputFields.slice(0).forEach(el => {
+                el.value = '';
+            })
         },
 
     };
@@ -87,8 +116,12 @@ document.addEventListener('DOMContentLoaded', () => {
     mentions.addEventListener('click', helpers.revealMentions);
 
     // control input before validation
-
+    helpers.resetFormFields(form);
     contactForm.addEventListener('keyup', helpers.controlInput);
+
+    // control submission of the form
+    form.elements
+    envoi.addEventListener('click', helpers.controlSubmission)
 
     // behavior for mobile devices ----------------------
 
