@@ -434,6 +434,10 @@ textarea {
     outline: 2px solid green;
 }
 
+.rc-anchor {
+    width: 100%;
+}
+
 #messageArea {
     display: flex;
     width: 60%;
