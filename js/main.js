@@ -130,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('keyup', helpers.controlInput);
 
     // control submission of the form
-    form.elements
-    form.addEventListener('submit', helpers.controlSubmission)
+    envoi.addEventListener('click', helpers.controlSubmission);
+    form.addEventListener('submit');
 
     // behavior for mobile devices ----------------------
 
