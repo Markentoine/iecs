@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         controlSubmission: e => {
             e.preventDefault();
+            e.stopPropagation();
             let submit = true
             const errorMessage = document.getElementById('errors');
             const elementsToCheck = [...form.elements].filter(el => {
