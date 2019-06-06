@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // control submission of the form
     envoi.addEventListener('click', helpers.controlSubmission);
-    form.addEventListener('submit', () => alert('Merci'));
+    form.addEventListener('submit');
 
     // behavior for mobile devices ----------------------
 
