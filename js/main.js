@@ -102,7 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
             if (submit) {
-                document.forms['form-contact'].submit();
+                const submitEvent = new Event('submit');
+                form.dispatchEvent(submitEvent);
             }
         },
 
