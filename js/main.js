@@ -128,6 +128,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // mentions légales
     mentions.addEventListener('click', helpers.revealMentions);
 
+    //logo in header
+
+    logoHead.onclick = () => window.scroll(0, 0);
+
     // control input before validation
     helpers.resetFormFields(form);
     contactForm.addEventListener('keyup', helpers.controlInput);
