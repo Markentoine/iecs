@@ -242,7 +242,7 @@ main {
 .activity {
     display: grid;
     grid-template-columns: 10vw 80vw 10vw;
-    grid-template-rows: 5vh 58vh 5vh 50vh 5vh 70vh 5vh 30vh 20vh 15vh 25vh 55vh 50vh 60vh;
+    grid-template-rows: 5vh 58vh 5vh 50vh 5vh 70vh 5vh 30vh 20vh 15vh 25vh 55vh 45vh 70vh;
     background-color: var(--bg);
     font-size: 1rem;
     width: 100%;
@@ -441,7 +441,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     font: var(--fontDarker);
-    font-size: .5rem;
+    font-size: .9rem;
 }
 
 footer div:first-child {

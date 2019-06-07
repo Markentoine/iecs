@@ -159,6 +159,17 @@ document.addEventListener('DOMContentLoaded', () => {
             el.dataset.rellaxSpeed = ""
         });
         rellax.destroy();
+
+        // change text in the footer
+        // icons credits
+        const iconsCredits = document.getElementById("iconsCredits");
+        iconsCredits.innerHTML = '';
+        const anchorToCreditAuthor = document.createElement('a');
+        anchorToCreditAuthor.href = "https://www.flaticon.com/authors/eucalyp";
+        anchorToCreditAuthor.textContent = 'Icons';
+        iconsCredits.append(anchorToCreditAuthor);
+        // mentions
+        document.getElementById('mentions').textContent = 'Mentions';
     }
 
     logoHead.onclick = () => window.scroll(0, 0);
