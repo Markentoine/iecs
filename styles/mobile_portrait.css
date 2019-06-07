@@ -444,12 +444,16 @@ footer {
     font-size: .9rem;
 }
 
+footer div {
+    margin-bottom: 2rem;
+}
+
 footer div:first-child {
-    margin-left: .5rem;
+    margin-left: .9rem;
 }
 
 footer div:last-child {
-    margin-right: .5rem;
+    margin-right: .9rem;
 }
 
 #errors {
