@@ -1,0 +1,48 @@
+:root {
+    --bg: #f8f8f8;
+    --bg-header: #ebebeb;
+    --logo: #0074D9;
+    --color-primary: green;
+    --color-error: red;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: var(--logo);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+#icon-send {
+    width: 10%;
+}
+
+svg {
+    fill: var(--logo);
+}
+
+button {
+    background-color: var(--logo);
+    color: var(--bg);
+    border-style: solid;
+    border-radius: .3rem;
+    height: 2rem;
+}

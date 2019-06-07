@@ -471,6 +471,13 @@ footer div:last-child {
     align-items: center;
 }
 
+#mentions-text h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: .5rem 0;
+    width: 80%;
+}
+
 #mentions-wrapper {
     display: flex;
     flex-direction: column;
@@ -481,7 +488,7 @@ footer div:last-child {
 
 #mentions-wrapper div {
     width: 75%;
-    font-size: .7rem;
+    font-size: 1rem;
     text-align: justify;
     padding: .5rem 0;
 }
@@ -490,7 +497,7 @@ footer div:last-child {
     width: 100vw;
     position: block;
     background-color: var(--bg);
-    margin-top: 6vh;
+    margin-top: 10vh;
 }
 
 #revenir-site {
@@ -498,7 +505,8 @@ footer div:last-child {
     color: var(--bg);
     border-style: solid;
     border-radius: .3rem;
-    height: 2rem;
+    width: 50%;
+    height: 4rem;
 }
 
 #revenir-site:hover {
