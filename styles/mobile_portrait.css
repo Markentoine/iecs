@@ -443,3 +443,60 @@ footer {
     font: var(--fontDarker);
     font-size: .5rem;
 }
+
+footer div:first-child {
+    margin-left: .5rem;
+}
+
+footer div:last-child {
+    margin-right: .5rem;
+}
+
+#errors {
+    color: #FC4445;
+    margin-top: 1rem;
+}
+
+#mentions:hover {
+    cursor: pointer;
+}
+
+#mentions-text {
+    position: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mentions-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#mentions-wrapper div {
+    width: 75%;
+    font-size: .7rem;
+    text-align: justify;
+    padding: .5rem 0;
+}
+
+#overlay {
+    width: 100vw;
+    position: block;
+    background-color: var(--bg);
+    margin-top: 6vh;
+}
+
+#revenir-site {
+    background-color: var(--logo);
+    color: var(--bg);
+    border-style: solid;
+    border-radius: .3rem;
+    height: 2rem;
+}
+
+#revenir-site:hover {
+    cursor: pointer;
+}
