@@ -105,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const submitEvent = new Event('submit');
                 const formName = [...document.getElementsByTagName('input')].find(input => input.name === 'form-name');
                 formName.value = 'contact-iecs';
-                console.log('formName', formName);
                 form.dispatchEvent(submitEvent);
             }
         },
@@ -138,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // control submission of the form
     envoi.addEventListener('click', helpers.controlSubmission);
-    form.addEventListener('submit');
+    form.addEventListener('submit', () => {}); // taken in charge by netlify
 
     // behavior for mobile devices ----------------------
 
